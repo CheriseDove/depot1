@@ -4,13 +4,13 @@ one:
   title: MyString1
   description: MyText
   image_url: ruby.jpg
-  price: 0.01
+  price: 9.99
 
 two:
   title: MyString2
   description: MyText
   image_url: ruby.jpg
-  price: 0.01
+  price: 9.99
 
 ruby:
   title: Programming Ruby 1.9 & 2.0
