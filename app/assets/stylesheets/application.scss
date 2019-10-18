@@ -44,20 +44,20 @@
     -webkit-box-orient: horizontal;
   }
   nav {
-  padding-bottom: 1em;
-  background: #141;
-  text-align: center;  // mobile has centered nav
-  @media (min-width: 30em) {
-    text-align: left; // desktop nav is left-aligned
-    padding: 1em;     // and needs more padding
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    padding-bottom: 1em;
+    background: #141;
+    text-align: center;  // mobile has centered nav
     @media (min-width: 30em) {
-      padding-right: 1em; // give desktop some extra space
+      text-align: left; // desktop nav is left-aligned
+      padding: 1em;     // and needs more padding
     }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      @media (min-width: 30em) {
+        padding-right: 1em; // give desktop some extra space
+      }
       li {
         margin: 0;
         padding: 0.5em;
