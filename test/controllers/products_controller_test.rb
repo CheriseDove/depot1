@@ -3,6 +3,7 @@ require 'test_helper'
 class ProductsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @product = products(:one)
+    #@product = products(:two)
   end
 
   test "should get index" do
@@ -45,12 +46,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to products_url
   end
+
   test "can't delete product in cart" do
-  assert_difference('Product.count', 0) do
+    assert_difference('Product.count', 0) do
     delete product_url(products(:two))
-  end
+    #delete product_url(products(:one))
+    end
 
   assert_redirected_to products_url
-end
+  end
 
 end
