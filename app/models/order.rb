@@ -1,6 +1,6 @@
 class Order < ApplicationRecord
   has_many :line_items, dependent: :destroy
-  validates :pay_type, inclusion: pay_type.keys
+  validates :pay_type, inclusion: pay_types.keys
   belongs_to :line_items
 
   enum pay_type: {
