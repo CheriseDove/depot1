@@ -34,6 +34,7 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update line_item" do
+    @line_item = new @line_item
     patch line_item_url(@line_item), params: {
       line_item: { product_id: @line_item.product_id }
     }
@@ -54,5 +55,5 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
     end
     assert_response :success
   end
-  
+
 end ##class
